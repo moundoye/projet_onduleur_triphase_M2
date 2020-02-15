@@ -1,0 +1,23 @@
+IP Ports Diff Report for core
+Tue Jan 14 08:17:30 2020
+Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. IP Information
+
+
+
++------------------------------------------------+
+; IP Information                                 ;
++----------------------+-------------------------+
+; IP Variation Name    ; core                    ;
+; Prior Version        ; ACDS_v18.0              ;
+; New Version          ; ACDS_v18.1              ;
+; New File             ; core/synthesis/core.vhd ;
+; Has Port Differences ; No                      ;
++----------------------+-------------------------+
+
+

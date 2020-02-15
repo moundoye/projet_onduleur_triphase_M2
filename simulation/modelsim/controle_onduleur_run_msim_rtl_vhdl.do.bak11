@@ -1,0 +1,22 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/mmouh/TP_CC_2019_PROJET/secure.vhd}
+vcom -93 -work work {C:/Users/mmouh/TP_CC_2019_PROJET/MLI.vhd}
+vcom -93 -work work {C:/Users/mmouh/TP_CC_2019_PROJET/lock_data.vhd}
+vcom -93 -work work {C:/Users/mmouh/TP_CC_2019_PROJET/counter.vhd}
+vcom -93 -work work {C:/Users/mmouh/TP_CC_2019_PROJET/controle_onduleur.vhd}
+vcom -93 -work work {C:/Users/mmouh/TP_CC_2019_PROJET/controle_hps_fpga.vhd}
+
+vcom -93 -work work {C:/Users/mmouh/TP_CC_2019_PROJET/testbench.vhd}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  testbench
+
+add wave *
+view structure
+view signals
+run 300 ns

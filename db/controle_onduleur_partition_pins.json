@@ -1,0 +1,77 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "io_controleur_std_logic_u_high",
+					"strict" : false
+				},
+				{
+					"name" : "io_controleur_std_logic_v_high",
+					"strict" : false
+				},
+				{
+					"name" : "io_controleur_std_logic_w_high",
+					"strict" : false
+				},
+				{
+					"name" : "io_controleur_std_logic_u_low",
+					"strict" : false
+				},
+				{
+					"name" : "io_controleur_std_logic_v_low",
+					"strict" : false
+				},
+				{
+					"name" : "io_controleur_std_logic_w_low",
+					"strict" : false
+				},
+				{
+					"name" : "led_export[0]",
+					"strict" : false
+				},
+				{
+					"name" : "led_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "led_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "led_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "led_export[4]",
+					"strict" : false
+				},
+				{
+					"name" : "led_export[5]",
+					"strict" : false
+				},
+				{
+					"name" : "led_export[6]",
+					"strict" : false
+				},
+				{
+					"name" : "led_export[7]",
+					"strict" : false
+				},
+				{
+					"name" : "io_controleur_std_logic_secu",
+					"strict" : false
+				},
+				{
+					"name" : "clk_clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset_reset_n",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,126 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\mmouh\TP_CC_2019_PROJET\core.qsys --block-symbol-file --output-directory=C:\Users\mmouh\TP_CC_2019_PROJET\core --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading TP_CC_2019_PROJET/core.qsys
+Progress: Reading input file
+Progress: Adding JTAG_console [altera_jtag_avalon_master 18.0]
+Progress: Parameterizing module JTAG_console
+Progress: Adding clk_0 [clock_source 18.0]
+Progress: Parameterizing module clk_0
+Progress: Adding controle_onduleur_0 [controle_onduleur 1.0]
+Progress: Parameterizing module controle_onduleur_0
+Progress: Adding hps_0 [altera_hps 18.0]
+Progress: Parameterizing module hps_0
+Progress: Adding identifiant_sys [altera_avalon_sysid_qsys 18.0]
+Progress: Parameterizing module identifiant_sys
+Progress: Adding pio_led [altera_avalon_pio 18.0]
+Progress: Parameterizing module pio_led
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: core.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: core.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: core.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: core.hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: core.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: core.identifiant_sys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: core.identifiant_sys: Time stamp will be automatically updated when this component is generated.
+Warning: core.hps_0: hps_0.h2f_mpu_events must be exported, or connected to a matching conduit.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\mmouh\TP_CC_2019_PROJET\core.qsys --synthesis=VHDL --output-directory=C:\Users\mmouh\TP_CC_2019_PROJET\core\synthesis --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading TP_CC_2019_PROJET/core.qsys
+Progress: Reading input file
+Progress: Adding JTAG_console [altera_jtag_avalon_master 18.0]
+Progress: Parameterizing module JTAG_console
+Progress: Adding clk_0 [clock_source 18.0]
+Progress: Parameterizing module clk_0
+Progress: Adding controle_onduleur_0 [controle_onduleur 1.0]
+Progress: Parameterizing module controle_onduleur_0
+Progress: Adding hps_0 [altera_hps 18.0]
+Progress: Parameterizing module hps_0
+Progress: Adding identifiant_sys [altera_avalon_sysid_qsys 18.0]
+Progress: Parameterizing module identifiant_sys
+Progress: Adding pio_led [altera_avalon_pio 18.0]
+Progress: Parameterizing module pio_led
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: core.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: core.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: core.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: core.hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: core.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: core.identifiant_sys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: core.identifiant_sys: Time stamp will be automatically updated when this component is generated.
+Warning: core.hps_0: hps_0.h2f_mpu_events must be exported, or connected to a matching conduit.
+Info: core: Generating core "core" for QUARTUS_SYNTH
+Warning: hps_0.f2h_irq0: Cannot connect clock for irq_mapper.sender
+Warning: hps_0.f2h_irq0: Cannot connect reset for irq_mapper.sender
+Warning: hps_0.f2h_irq1: Cannot connect clock for irq_mapper_001.sender
+Warning: hps_0.f2h_irq1: Cannot connect reset for irq_mapper_001.sender
+Info: JTAG_console: "core" instantiated altera_jtag_avalon_master "JTAG_console"
+Info: controle_onduleur_0: "core" instantiated controle_onduleur "controle_onduleur_0"
+Info: hps_0: "Running  for module: hps_0"
+Info: hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: hps_0: "core" instantiated altera_hps "hps_0"
+Info: identifiant_sys: "core" instantiated altera_avalon_sysid_qsys "identifiant_sys"
+Info: pio_led: Starting RTL generation for module 'core_pio_led'
+Info: pio_led:   Generation command is [exec C:/intelfpga_lite/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.0/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.0/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=core_pio_led --dir=C:/Users/mmouh/AppData/Local/Temp/alt8281_4430306442286305972.dir/0004_pio_led_gen/ --quartus_dir=C:/intelfpga_lite/18.0/quartus --verilog --config=C:/Users/mmouh/AppData/Local/Temp/alt8281_4430306442286305972.dir/0004_pio_led_gen//core_pio_led_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_led: Done RTL generation for module 'core_pio_led'
+Info: pio_led: "core" instantiated altera_avalon_pio "pio_led"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "core" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "core" instantiated altera_irq_mapper "irq_mapper"
+Info: irq_mapper_001: "core" instantiated altera_irq_mapper "irq_mapper_001"
+Info: rst_controller: "core" instantiated altera_reset_controller "rst_controller"
+Info: jtag_phy_embedded_in_jtag_master: "JTAG_console" instantiated altera_jtag_dc_streaming "jtag_phy_embedded_in_jtag_master"
+Info: timing_adt: "JTAG_console" instantiated timing_adapter "timing_adt"
+Info: fifo: "JTAG_console" instantiated altera_avalon_sc_fifo "fifo"
+Info: b2p: "JTAG_console" instantiated altera_avalon_st_bytes_to_packets "b2p"
+Info: p2b: "JTAG_console" instantiated altera_avalon_st_packets_to_bytes "p2b"
+Info: transacto: "JTAG_console" instantiated altera_avalon_packets_to_master "transacto"
+Info: b2p_adapter: "JTAG_console" instantiated channel_adapter "b2p_adapter"
+Info: p2b_adapter: "JTAG_console" instantiated channel_adapter "p2b_adapter"
+Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: JTAG_console_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "JTAG_console_master_translator"
+Info: controle_onduleur_0_avalon_slave_0_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "controle_onduleur_0_avalon_slave_0_translator"
+Info: hps_0_h2f_lw_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_0_h2f_lw_axi_master_agent"
+Info: JTAG_console_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "JTAG_console_master_agent"
+Info: controle_onduleur_0_avalon_slave_0_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "controle_onduleur_0_avalon_slave_0_agent"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: hps_0_h2f_lw_axi_master_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "hps_0_h2f_lw_axi_master_wr_limiter"
+Info: Reusing file C:/Users/mmouh/TP_CC_2019_PROJET/core/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file C:/Users/mmouh/TP_CC_2019_PROJET/core/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: controle_onduleur_0_avalon_slave_0_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "controle_onduleur_0_avalon_slave_0_burst_adapter"
+Info: Reusing file C:/Users/mmouh/TP_CC_2019_PROJET/core/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/mmouh/TP_CC_2019_PROJET/core/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+Info: Reusing file C:/Users/mmouh/TP_CC_2019_PROJET/core/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/mmouh/TP_CC_2019_PROJET/core/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: controle_onduleur_0_avalon_slave_0_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "controle_onduleur_0_avalon_slave_0_rsp_width_adapter"
+Info: Reusing file C:/Users/mmouh/TP_CC_2019_PROJET/core/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/mmouh/TP_CC_2019_PROJET/core/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_001: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_001" instantiated error_adapter "error_adapter_0"
+Info: core: Done "core" with 40 modules, 111 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
